@@ -1,0 +1,293 @@
+<html>
+ <head>
+  <title>
+   Mitra Sinar Store
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #c0c0c0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #000;
+        }
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .sub-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+        .small-button {
+            display: inline-block;
+            width: 140px;
+            margin: 10px 5px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+        .large-box {
+            width: 80%;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #e0e0e0;
+            border: 2px solid #000;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .large-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .footer {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        dialog {
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 18px;
+        }
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .price-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .price-list li {
+            margin: 10px 0;
+        }
+        .price-list a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .image-container {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   MITRA SINAR STORE
+  </div>
+  <div class="sub-header">
+   PT MITRA SINAR GROUP CORPORATION
+  </div>
+  <button class="button" onclick="showDialog('suntikDialog')">
+   SUNTIK SOSMED
+  </button>
+  <button class="button" onclick="showDialog('aplikasiDialog')">
+   APLIKASI PREMIUM
+  </button>
+  <button class="button" onclick="showDialog('topupDialog')">
+   TOPUP BUSSID
+  </button>
+  <button class="button" onclick="showDialog('akunDialog')">
+   AKUN BUSSID
+  </button>
+  <a class="small-button" href="https://www.whatsapp.com" target="_blank">
+   WHATSAPP
+  </a>
+  <a class="small-button" href="https://www.instagram.com" target="_blank">
+   INSTAGRAM
+  </a>
+  <a class="small-button" href="https://www.youtube.com" target="_blank">
+   YOUTUBE
+  </a>
+  <div class="large-box">
+   <img alt="Large Image" height="200" id="largeImage" src="https://storage.googleapis.com/a1aa/image/IexOoCqdps0hSiVORWAScEk6wC9rls8YWrAK5fiyeNFeT83OB.jpg" width="800"/>
+  </div>
+  <div class="footer">
+   <a href="#" onclick="showDialog('tutorialDialog')">
+    bingung? sini lihat tutorial
+   </a>
+  </div>
+  <div class="footer">
+   © copyright full by PT MITRA SINAR GROUP CORPORATION 2024
+  </div>
+  <dialog id="suntikDialog">
+   <p>
+    Anda memilih SUNTIK SOSMED
+   </p>
+   <ul class="price-list">
+    <li>
+     <a href="https://example.com/suntik1" target="_blank">
+      Harga 1: Rp 100.000
+     </a>
+    </li>
+    <li>
+     <a href="https://example.com/suntik2" target="_blank">
+      Harga 2: Rp 200.000
+     </a>
+    </li>
+    <li>
+     <a href="https://example.com/suntik3" target="_blank">
+      Harga 3: Rp 300.000
+     </a>
+    </li>
+   </ul>
+   <button onclick="closeDialog('suntikDialog')">
+    Tutup
+   </button>
+  </dialog>
+  <dialog id="aplikasiDialog">
+   <p>
+    Anda memilih APLIKASI PREMIUM
+   </p>
+   <ul class="price-list">
+    <li>
+     <a href="https://example.com/aplikasi1" target="_blank">
+      Harga 1: Rp 150.000
+     </a>
+    </li>
+    <li>
+     <a href="https://example.com/aplikasi2" target="_blank">
+      Harga 2: Rp 250.000
+     </a>
+    </li>
+    <li>
+     <a href="https://example.com/aplikasi3" target="_blank">
+      Harga 3: Rp 350.000
+     </a>
+    </li>
+   </ul>
+   <button onclick="closeDialog('aplikasiDialog')">
+    Tutup
+   </button>
+  </dialog>
+  <dialog id="topupDialog">
+   <p>
+    Anda memilih TOPUP BUSSID
+   </p>
+   <ul class="price-list">
+    <li>
+     <a href="https://example.com/topup1" target="_blank">
+      Harga 1: Rp 50.000
+     </a>
+    </li>
+    <li>
+     <a href="https://example.com/topup2" target="_blank">
+      Harga 2: Rp 100.000
+     </a>
+    </li>
+    <li>
+     <a href="https://example.com/topup3" target="_blank">
+      Harga 3: Rp 150.000
+     </a>
+    </li>
+   </ul>
+   <button onclick="closeDialog('topupDialog')">
+    Tutup
+   </button>
+  </dialog>
+  <dialog id="akunDialog">
+   <p>
+    Anda memilih AKUN BUSSID
+   </p>
+   <div class="image-container">
+    <img alt="Akun Image" height="300" id="akunImage" src="https://storage.googleapis.com/a1aa/image/kGuVNIc7xXoqIB5VmL8yJYEKGGFu06lDMffmxWrBZaIvvfbnA.jpg" width="800"/>
+   </div>
+   <div class="nav-buttons">
+    <button onclick="prevImage()">
+     Sebelumnya
+    </button>
+    <button onclick="nextImage()">
+     Selanjutnya
+    </button>
+   </div>
+   <button onclick="closeDialog('akunDialog')">
+    Tutup
+   </button>
+  </dialog>
+  <dialog id="tutorialDialog">
+   <p>
+    Tutorial Video
+   </p>
+   <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560">
+   </iframe>
+   <button onclick="closeDialog('tutorialDialog')">
+    Tutup
+   </button>
+  </dialog>
+  <script>
+   function showDialog(dialogId) {
+            document.getElementById(dialogId).showModal();
+        }
+
+        function closeDialog(dialogId) {
+            document.getElementById(dialogId).close();
+        }
+
+        let currentImageIndex = 0;
+        const images = [
+            "https://placehold.co/800x200?text=Large+Image+1",
+            "https://placehold.co/800x200?text=Large+Image+2",
+            "https://placehold.co/800x200?text=Large+Image+3",
+            "https://placehold.co/800x200?text=Large+Image+4"
+        ];
+
+        function changeImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('largeImage').src = images[currentImageIndex];
+        }
+
+        setInterval(changeImage, 10000);
+
+        let akunImageIndex = 0;
+        const akunImages = [
+            "https://placehold.co/800x300?text=Akun+Image+1",
+            "https://placehold.co/800x300?text=Akun+Image+2",
+            "https://placehold.co/800x300?text=Akun+Image+3",
+            "https://placehold.co/800x300?text=Akun+Image+4"
+        ];
+
+        function nextImage() {
+            akunImageIndex = (akunImageIndex + 1) % akunImages.length;
+            document.getElementById('akunImage').src = akunImages[akunImageIndex];
+        }
+
+        function prevImage() {
+            akunImageIndex = (akunImageIndex - 1 + akunImages.length) % akunImages.length;
+            document.getElementById('akunImage').src = akunImages[akunImageIndex];
+        }
+  </script>
+ </body>
+</html>
